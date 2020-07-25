@@ -1,0 +1,111 @@
+/* Vars */
+
+$fire: #2c3e50;
+$dove: #7f8c8d;
+$book: #9f7b3e;
+$gray: #2f2e2e;
+
+$theme-colors: (
+  "fire": $fire,
+  "dove": $dove,
+  "book": $book,
+  "gray-dark": $gray,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/* Main Navbar */
+
+html, body, #home {
+    height: 100%;
+}
+
+body {
+    background: url('../img/lion-of-judah.png'), linear-gradient(to right, #2c3e50, #9f7b3e);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: 'Oswald', sans-serif;
+}
+
+.name-logo {
+    font-size: 4vh;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #7f8c8d;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: $book;
+}
+
+
+/* 
+*  Worship Section
+* -----------------
+*/
+
+.border-warning {
+    border-right: 1px solid $book;
+}
+
+
+/* 
+*  History Section
+* -----------------
+*/
+
+.container-history {
+    border: 2px solid $dove;
+    padding: 2rem;
+}
+
+
+/* 
+*  Midea Queries
+* ---------------
+*/
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    h1 {
+        padding-top: 5rem;
+        font-size: 2em;
+    }
+
+    .border-warning {
+        border-right: none;
+        border-bottom: 1px solid $book;
+    }
+
+    .container-history {
+        border: none;
+        padding: 0;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .border-warning {
+        border-right: none;
+        border-bottom: 1px solid $book;
+    }
+
+    .container-history {
+        border: none;
+        padding: 0;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    
+}
